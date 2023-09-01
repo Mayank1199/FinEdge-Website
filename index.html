@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinEdge</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-slate-100">
+    <!-- Header Section Starts -->
+    <header>
+      <div
+        class="md:flex md:justify-between hidden md:items-center px-20 bg-blue-600 text-white"
+      >
+        <p class="text-sm">+91-9876543210</p>
+        <div class="flex items-center space-x-2">
+          <ion-icon
+            name="logo-twitter"
+            class="bg-blue-700 p-1 cursor-pointer"
+          ></ion-icon>
+          <ion-icon
+            name="logo-facebook"
+            class="bg-blue-700 p-1 cursor-pointer"
+          ></ion-icon>
+          <ion-icon
+            name="logo-instagram"
+            class="bg-blue-700 p-1 cursor-pointer"
+          ></ion-icon>
+          <ion-icon
+            name="logo-pinterest"
+            class="bg-blue-700 p-1 cursor-pointer"
+          ></ion-icon>
+        </div>
+      </div>
+
+      <nav
+        class="md:px-20 px-6 py-3 bg-white shadow md:flex md:items-center md:justify-between"
+      >
+        <div class="flex justify-between items-center">
+          <h1 class="lg:text-5xl text-4xl">
+            Fin<span class="text-blue-600">Edge</span>
+          </h1>
+          <span class="text-3xl cursor-pointer md:hidden mx-2 block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
+        </div>
+        <ul
+          class="md:flex md:items-center space-x-12 md:z-auto md:static absolute bg-white w-full left-0 md:w-auto md:py-0 py-0 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-200"
+        >
+          <li class="mx-12 md:mx-4 my-6 md:my-0">
+            <a
+              href="#home"
+              class="lg:text-xl text-lg hover:text-blue-700 duration-200"
+              >Home</a
+            >
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="#about"
+              class="lg:text-xl text-lg hover:text-blue-700 duration-200"
+              >About Us</a
+            >
+          </li>
+          <li class="mx-0 my-6 md:my-0">
+            <a
+              href="#"
+              class="lg:text-xl text-lg hover:text-blue-700 duration-200"
+            >
+              <button
+                class="rounded-lg text-center inline-flex items-center"
+                type="button"
+                data-dropdown-toggle="dropdown"
+              >
+                Services
+                <ion-icon
+                  name="chevron-down-outline"
+                  class="text-sm mt-1"
+                ></ion-icon>
+              </button>
+              <div
+                class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow"
+                id="dropdown"
+              >
+                <ul class="py-2" aria-labelledby="dropdown">
+                  <li>
+                    <a href="#service" class="text-sm block px-4 py-1"
+                      >Individual Money Transfers</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#service" class="text-sm block px-4 py-1"
+                      >Business Payments</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#service" class="text-sm block px-4 py-1"
+                      >Real Time Payment Tracking</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </a>
+          </li>
+          <li class="mx-4 my-6 md:my-0">
+            <a
+              href="#contact"
+              class="lg:text-xl text-lg hover:text-blue-700 duration-200"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Header Section Ends -->
+
+    <!-- Hero Section Starts -->
+    <section id="home">
+      <div class="relative text-white z-[-1] md:z-0">
+        <div class="opacity-90">
+          <img
+            src="assets/pexels-burak-the-weekender-186461.jpg"
+            class="w-full h-[550px]"
+            alt=""
+          />
+        </div>
+        <div
+          class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 tracking-wide text-center py-6"
+        >
+          <h2
+            class="lg:text-4xl md:text-3xl text-xl font-semibold"
+            data-aos="fade-up"
+          >
+            Revolutionizing Cross-Border Payments
+          </h2>
+          <h2
+            class="lg:text-4xl md:text-3xl text-xl font-semibold"
+            data-aos="fade-up"
+          >
+            With Innovative Fintech Solutions
+          </h2>
+          <p class="mt-6 mb-10 md:text-base text-xs" data-aos="fade-up">
+            "Seamless Transactions Across Borders: Empowering Global Commerce."
+            <br />
+            "Breaking Boundaries, Unlocking Opportunities: Cross-Border Payments
+            Made Easy."
+            <br />
+            "Global Relations, Effortless Payments: Embrace the Future of
+            Cross-Border Transactions."
+          </p>
+
+          <button
+            class="bg-blue-600 border duration-200 border-white cursor-pointer hover:bg-blue-700 lg:px-4 lg:py-2 py-1 px-2 rounded text-base lg:text-lg font-semibold"
+          >
+            Get Started<ion-icon
+              class="text-sm mt-1"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section Ends -->
+
+    <!-- About Section Starts -->
+    <section id="about">
+      <div
+        class="w-72 mx-auto border-b md:border-b-2 text-center md:font-semibold border-blue-600 text-3xl md:text-4xl pb-4 mt-8 mb-12 md:mb-16 md:mt-12"
+      >
+        <h3>About <span class="text-blue-600">Us</span></h3>
+      </div>
+      <div
+        class="w-11/12 mx-auto flex lg:flex-row flex-col justify-center items-center"
+        data-aos="fade-right"
+      >
+        <div class="basis-2/5 p-2 lg:mb-0 mb-10">
+          <img
+            src="assets/40.-Fintech-Lending-Continues-to-Advance-during-the-Pandemic.jpg"
+            alt=""
+          />
+        </div>
+        <div class="basis-3/5 text-base lg:text-lg">
+          <p class="px-6">
+            Welcome to our finedge startup, where we are dedicated to
+            revolutionizing cross-border payments. Our mission is to break down
+            barriers and transform the way businesses and individual transact on
+            a global scale. With our innovative solutions, we empower seamless
+            and efficient cross-border transactions, enabling businesses to
+            expand their reach and capture new market opportunities with
+            confidence.
+            <br /><br />
+            By leveraging cutting-edge technology, we provide secure and
+            streamlined payment platforms that transcend borders and eliminate
+            the complexities typically associated with international financial
+            transactions.
+            <br /><br />
+            We are committed to driving economic growth, fostering global
+            connectivity, and empowering a world where borders are no longer
+            limitations. Join us on this transformative journey as we redefine
+            the future of cross-border payments and unlock new possibilities for
+            a borderless financial landscape.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- About Section Ends -->
+
+    <!-- Service Section Starts -->
+    <section id="service">
+      <div
+        class="w-72 mx-auto border-b md:border-b-2 text-center md:font-semibold border-blue-600 text-3xl md:text-4xl pb-4 mt-8 mb-12 md:mb-16 md:mt-12"
+      >
+        <h3>Our <span class="text-blue-600">Services</span></h3>
+      </div>
+      <div
+        class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8"
+        data-aos="fade-left"
+      >
+        <div class="bg-white p-6 rounded space-y-4">
+          <div class="overflow-hidden tracking-wide">
+            <img
+              src="assets/pexels-pixabay-50987.jpg"
+              class="hover:scale-105 duration-200"
+              alt=""
+            />
+          </div>
+          <h4 class="text-lg font-bold">Individual Money Transfers</h4>
+          <h5 class="text-base font-semibold">
+            "Seamless Transfers for Every Individual"
+          </h5>
+          <p class="text-sm">
+            Individual money transfer has ever been easier and more convenient
+            than it is today. With the advent of modern technology and
+            innovative financial solutions, individuals can effortlessly send
+            and receive money across borders or within the same country with
+            just a few taps on their smartphones.
+          </p>
+          <button
+            class="bg-blue-600 duration-200 hover:bg-blue-700 py-1 px-2 rounded text-white"
+          >
+            Know More
+          </button>
+        </div>
+
+        <div class="bg-white p-6 rounded space-y-4">
+          <div class="overflow-hidden tracking-wide">
+            <img
+              src="assets/pexels-karolina-grabowska-4386431.jpg"
+              class="hover:scale-105 duration-200"
+              alt=""
+            />
+          </div>
+          <h4 class="text-lg font-bold">Business Payments</h4>
+          <h5 class="text-base font-semibold">
+            "Empowering Seamless Payments"
+          </h5>
+          <p class="text-sm">
+            In today's fast-paced business world, efficient and secure payment
+            processing is essential for success, receiving payments from
+            customers, a reliable business payments system is crucial. We offer
+            a seamless experience that empowers businesses to streamline their
+            financial transactions.
+          </p>
+          <button
+            class="bg-blue-600 duration-200 hover:bg-blue-700 py-1 px-2 rounded text-white"
+          >
+            Know More
+          </button>
+        </div>
+
+        <div class="bg-white p-6 rounded space-y-4">
+          <div class="overflow-hidden tracking-wide">
+            <img
+              src="assets/pexels-monstera-58495633.jpg"
+              class="hover:scale-105 duration-200"
+              alt=""
+            />
+          </div>
+          <h4 class="text-lg font-bold">Real time Payment Tracking</h4>
+          <h5 class="text-base font-semibold">
+            "Real time Payment, Effortless Accuracy"
+          </h5>
+          <p class="text-sm">
+            In financial management, real-time payment tracking has become a
+            gamer-changer for businesses. Gone are the days of waiting for
+            transaction confirmations to reconcile payments. With our advanced
+            real-time payment tracking system, you gain immediate insight into
+            the status of your payments at every step of the journey.
+          </p>
+          <button
+            class="bg-blue-600 duration-200 hover:bg-blue-700 py-1 px-2 rounded text-white"
+          >
+            Know More
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Service Section Ends -->
+
+    <!-- Contact Section Starts -->
+    <section id="contact">
+      <div
+        class="w-72 mx-auto border-b md:border-b-2 text-center md:font-semibold border-blue-600 text-3xl md:text-4xl pb-4 mt-8 mb-12 md:mb-16 md:mt-12"
+      >
+        <h3>Contact <span class="text-blue-600">Us</span></h3>
+      </div>
+
+      <div class="text-gray-600 body-font relative" data-aos="fade-up">
+        <div class="absolute inset-0 bg-gray-300">
+          <img src="assets/finance-15.jpg" class="w-full h-full" alt="" />
+        </div>
+        <div class="container px-4 md:px-8 lg:px-12 pb-8 md:py-6 mx-auto flex">
+          <div
+            class="lg:w-2/4 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md"
+          >
+            <div class="relative mb-4">
+              <label for="email" class="leading-7 text-sm text-gray-800"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full bg-white rounded border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="email" class="leading-7 text-sm text-gray-800"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full bg-white rounded border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-200 text-base outline-none text-gray-800 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4">
+              <label for="message" class="leading-7 text-sm text-gray-800"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                class="w-full bg-white rounded border border-gray-300 focus:border-blue-600 focus:ring-2 focus:ring-blue-200 h-32 text-base outline-none text-gray-800 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              ></textarea>
+            </div>
+            <button
+              class="text-white bg-blue-600 border-0 duration-200 py-2 px-6 focus:outline-none hover:bg-blue-700 rounded text-lg"
+            >
+              Submit
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact Section Ends -->
+
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
